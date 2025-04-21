@@ -73,6 +73,10 @@ app.delete('/api/items/:id', async (req, res) => {
   }
 });
 
+export default function handler(req, res) {
+  res.status(200).json({ message: 'Hello from Vercel backend!' });
+}
+
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });
